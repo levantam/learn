@@ -1,0 +1,29 @@
+﻿
+@inject SignInManager<ApplicationUser> signInManager;
+@inject UserManager<ApplicationUser> userManager;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<h2>Index</h2>
+
+@if (signInManager.IsSignedIn(User)){
+    <div>User is logged in</div>
+    <div>Email: @userManager.GetUserName(User)</div>
+    <h3>Roles:</h3>
+    @*@foreach(var role in userManager.GetUsersInRoleAsync())
+    {
+        <p>@role</p>
+    }*@
+    
+
+}
+else
+{
+    <div>
+        <a href="@Url.Action("Login")">Login</a>
+    </div>
+}
+

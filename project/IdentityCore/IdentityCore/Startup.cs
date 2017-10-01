@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using IdentityCore.Data;
 using IdentityCore.Models;
 using IdentityCore.Services;
+using Microsoft.AspNetCore.Authentication.Google;
 
 namespace IdentityCore
 {
@@ -27,9 +28,10 @@ namespace IdentityCore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
+             
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
+            services.AddIdentity<ApplicationUser, IdentityRole>(o => o.Password.RequireLowercase =  false)
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
@@ -37,6 +39,7 @@ namespace IdentityCore
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddMvc();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,7 +58,16 @@ namespace IdentityCore
 
             app.UseStaticFiles();
 
+            //Add policy
             app.UseAuthentication();
+
+            //app.UseGoogleAuthentication(new GoogleOptions
+            //{
+            //    ClientId= "",
+            //    ClientSecret = ""
+            //    //SignInScheme = new CookiePolicyOptions.,
+                
+            //}); 
 
             app.UseMvc(routes =>
             {

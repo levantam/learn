@@ -1,0 +1,12 @@
+D:\WORKSPACE\GITLEARN\project\IdentityCore\IdentityCore\bin\Debug\netcoreapp2.0\IdentityCore.deps.json
+D:\WORKSPACE\GITLEARN\project\IdentityCore\IdentityCore\bin\Debug\netcoreapp2.0\IdentityCore.runtimeconfig.json
+D:\WORKSPACE\GITLEARN\project\IdentityCore\IdentityCore\bin\Debug\netcoreapp2.0\IdentityCore.runtimeconfig.dev.json
+D:\WORKSPACE\GITLEARN\project\IdentityCore\IdentityCore\bin\Debug\netcoreapp2.0\IdentityCore.dll
+D:\WORKSPACE\GITLEARN\project\IdentityCore\IdentityCore\bin\Debug\netcoreapp2.0\IdentityCore.pdb
+D:\WORKSPACE\GITLEARN\project\IdentityCore\IdentityCore\obj\Debug\netcoreapp2.0\IdentityCore.csprojResolveAssemblyReference.cache
+D:\WORKSPACE\GITLEARN\project\IdentityCore\IdentityCore\obj\Debug\netcoreapp2.0\IdentityCore.csproj.CoreCompileInputs.cache
+D:\WORKSPACE\GITLEARN\project\IdentityCore\IdentityCore\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\WORKSPACE\GITLEARN\project\IdentityCore\IdentityCore\obj\Debug\netcoreapp2.0\IdentityCore.AssemblyInfoInputs.cache
+D:\WORKSPACE\GITLEARN\project\IdentityCore\IdentityCore\obj\Debug\netcoreapp2.0\IdentityCore.AssemblyInfo.cs
+D:\WORKSPACE\GITLEARN\project\IdentityCore\IdentityCore\obj\Debug\netcoreapp2.0\IdentityCore.dll
+D:\WORKSPACE\GITLEARN\project\IdentityCore\IdentityCore\obj\Debug\netcoreapp2.0\IdentityCore.pdb
