@@ -1,0 +1,14 @@
+﻿@{ 
+    ViewBag.id = 0;
+}
+@section scripts
+{
+<script type="text/javascript">
+        $(document).ready(function () {
+            DoIzendaConfig();
+            izendaInit();
+        });
+</script>
+}
+<div class="loader" id="progressLoader"> </div>
+<div class="izenda-container" id="izenda-root"></div>
